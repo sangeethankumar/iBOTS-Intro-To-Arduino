@@ -7,7 +7,7 @@
 // [x] The Blue LED is also turned on.
 // [x] 300 milliseconds after all the LEDs turn on, the Blue LED turns off.
 // [x] The Red LED then turns on and off every second, forever.
-// [ ] The Green LED simultaneously turns on and off every half-second, forever.
+// [x] The Green LED simultaneously turns on and off every half-second, forever.
 // [ ] The Blue LED is on whenever the Green LED is off, and vice-versa.
 
 
@@ -32,10 +32,14 @@ void setup() {
 }
 
 void loop() {
-    // red
     digitalWrite(3, LOW);
-    delay(1000);
+    digitalWrite(4, LOW);
+    delay (500);
+    digitalWrite(4, HIGH);
+    delay (500);
     digitalWrite(3, HIGH);
-    delay(1000);
-
+    digitalWrite(4, LOW);
+    delay (500);
+    digitalWrite(4, HIGH);
+    delay (500);
 }

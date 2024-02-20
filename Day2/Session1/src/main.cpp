@@ -15,9 +15,9 @@
 #include <Arduino.h>
 
 void setup() {
-    // red
+    // // red
     pinMode(3, OUTPUT);
-    digitalWrite(3, HIGH);
+    // digitalWrite(3, HIGH);
 
     // green
     pinMode(4, OUTPUT);
@@ -26,11 +26,15 @@ void setup() {
     // purple
     pinMode(5, OUTPUT);
     digitalWrite(5, HIGH);
-    delay(500);
+    delay(300);
     digitalWrite(5, LOW);
 
 }
 
 void loop() {
+    // red
+    digitalWrite(3, LOW);
+    delay(1000);
+    digitalWrite(3, HIGH);
 
 }

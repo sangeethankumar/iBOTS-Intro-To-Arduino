@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "author": "Sangeetha Nandakumar",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": 67.8, "left": -0.6, "attrs": {} },
+      {
+        "type": "wokwi-led",
+        "id": "led1",
+        "top": -51.6,
+        "left": 147.8,
+        "attrs": { "color": "red" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 13.55,
+        "left": 172.8,
+        "attrs": { "value": "500000" }
+      }
+    ],
+    "connections": [
+      [ "uno:GND.1", "led1:C", "black", [ "v0" ] ],
+      [ "uno:13", "r1:1", "green", [ "v0" ] ],
+      [ "r1:2", "led1:A", "green", [ "v0" ] ]
+    ],
+    "dependencies": {}
+  }
